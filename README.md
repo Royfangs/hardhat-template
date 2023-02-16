@@ -12,13 +12,19 @@ folder structure
 └── README.md
 ```
 
-compile contracts
+Quick start
+
+```javascript
+npm install
+```
+
+Compile contracts
 
 ```javascript
 npm run compile
 ```
 
-compile files in `src` folder to `dist` folder
+Compile files in `src` folder to `dist` folder
 
 ```javascript
 npm run build
