@@ -1,9 +1,9 @@
-import "@nomicfoundation/hardhat-toolbox";
-import "hardhat-abi-exporter";
-import dotenv from "dotenv";
+import '@nomicfoundation/hardhat-toolbox';
+import 'hardhat-abi-exporter';
+import dotenv from 'dotenv';
 
 // types
-import type { HardhatUserConfig } from "hardhat/config";
+import type { HardhatUserConfig } from 'hardhat/config';
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.7",
+        version: '0.8.7',
         settings: {
           optimizer: {
             enabled: true,
@@ -25,13 +25,13 @@ const config: HardhatUserConfig = {
     ],
   },
   abiExporter: {
-    path: ".abi",
-    runOnCompile: false,
+    path: '.abi',
+    runOnCompile: true,
     clear: false,
     flat: true,
     only: [],
     spacing: 2,
-    format: "json",
+    format: 'json',
   },
 };
 
